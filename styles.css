@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
+  color: #1a202c;
+}
+
+.app {
+  width: min(92vw, 480px);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(26, 32, 44, 0.15);
+  padding: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.description {
+  margin: 12px 0 18px;
+  line-height: 1.6;
+}
+
+.description span {
+  color: #c53030;
+  font-weight: 700;
+}
+
+.habit-form {
+  display: grid;
+  gap: 10px;
+}
+
+.habit-form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.result {
+  margin-top: 18px;
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid;
+}
+
+.result .count {
+  margin: 0 0 8px;
+}
+
+.result p {
+  margin: 0;
+}
+
+.safe {
+  background: #f0fff4;
+  border-color: #9ae6b4;
+  color: #22543d;
+}
+
+.out {
+  background: #fff5f5;
+  border-color: #feb2b2;
+  color: #742a2a;
+}

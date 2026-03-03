@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>不健康習慣チェック記録ツール</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>不健康習慣チェック記録ツール</h1>
+    <p class="description">当てはまる項目にチェックを入れてください。3つ以上で<span>アウト！</span></p>
+
+    <form id="habit-form" class="habit-form">
+      <label><input type="checkbox" name="habit" value="寝不足" /> 寝不足</label>
+      <label><input type="checkbox" name="habit" value="前日の残業" /> 前日の残業</label>
+      <label><input type="checkbox" name="habit" value="酒" /> 酒</label>
+      <label><input type="checkbox" name="habit" value="カフェイン" /> カフェイン</label>
+      <label><input type="checkbox" name="habit" value="爆食" /> 爆食</label>
+      <label><input type="checkbox" name="habit" value="過度な運動" /> 過度な運動</label>
+    </form>
+
+    <section id="result" class="result safe" aria-live="polite">
+      <p class="count">現在: <strong id="selected-count">0</strong> / 6</p>
+      <p id="message">まだセーフです。2つ以下に抑えましょう。</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
